@@ -84,12 +84,12 @@ function checkTemperature() {
       Shelly.call("Switch.set", {'id': 1, 'on': true, 'toggle_after': 10});
       print("Temperature low -> getting higher");
     }
-    else{
+  }
+  else{
         print("Error: Getting back NULL from at least one sensor!")
-    }
+  }
   print("----------------------------------------------");
   isCheckTemperatureRunning = false;
- }
 }
 
 function resetToogles() {
